@@ -12,5 +12,6 @@ public class Teste {
         if (nome == "Joao") {
             return 0;
         } else return 1;
+        // Isso retorna esses valores apenas por graça mesmo
     }
 }
