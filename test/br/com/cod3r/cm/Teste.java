@@ -7,4 +7,7 @@ public class Teste {
             return "A";
         } else return "b";
     }
+
+    public int idade(String nome) {
+    }
 }
