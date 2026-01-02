@@ -11,3 +11,5 @@ public class Teste {
     public int idade(String nome) {
         if (nome == "Joao") {
             return 0;
+    }
+}
