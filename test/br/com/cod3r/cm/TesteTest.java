@@ -13,5 +13,9 @@ class TesteTest {
     @Test
     void testarSeIgualADois() {
     }
+
+    @Test
+    void testarSeIgualATres() {
+    }
     // Vale mais a pena eu usar o JUnit no lugar de ficar criando um main só pra testar o código
 }
