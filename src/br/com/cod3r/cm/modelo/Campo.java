@@ -19,4 +19,8 @@ public class Campo {
         this.linha = linha;
         this.coluna = coluna;
     }
+
+    boolean adicionarVizinho(Campo vizinho) {
+        boolean linhaDiferente = linha != vizinho.linha;
+    }
 }
