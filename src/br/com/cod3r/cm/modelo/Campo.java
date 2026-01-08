@@ -27,7 +27,7 @@ public class Campo {
 
         int deltaLinha = Math.abs(linha - vizinho.linha);
         int deltaColuna = Math.abs(coluna - vizinho.coluna);
-        int deltaGeral = deltaLinha + deltaLinha;
+        int deltaGeral = deltaColuna + deltaLinha;
 
         if (deltaGeral == 1  && !diagonal) {
             vizinhos.add(vizinho);
