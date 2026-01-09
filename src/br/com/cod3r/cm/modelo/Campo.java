@@ -57,9 +57,17 @@ public class Campo {
             if (minado) {
                 throw new ExplosaoException();
             }
+
+            // Isso faz com que ele vai abrindo até a vizinhança não ser mais segura (ter alguma mina)
+            if (vizinhancaSegura()) {
+                vizinhos.forEach(v -> v.abrir());
+            }
         }
 
         return false;
     }
 
+    boolean vizinhancaSegura() {
+        return vizinhos.stream().noneMatch(v -> v.minado);
+    }
 }
