@@ -12,7 +12,7 @@ public class CampoTeste {
     // O BeforEach serve para executar algo antes de cada método
     @BeforeEach
     void iniciarCampo() {
-        new Campo(3, 3);
+        campo = new Campo(3, 3);
     }
 
     @Test
