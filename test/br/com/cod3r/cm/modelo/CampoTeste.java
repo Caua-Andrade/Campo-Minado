@@ -1,12 +1,19 @@
 package br.com.cod3r.cm.modelo;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CampoTeste {
 
-    private Campo campo = new Campo(3, 3);
+    private Campo campo;
+
+    // O BeforEach serve para executar algo antes de cada método
+    @BeforeEach
+    void iniciarCampo() {
+        new Campo(3, 3);
+    }
 
     @Test
     void testeVizinhoRealDistancia1() {
