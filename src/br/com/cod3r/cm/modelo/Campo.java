@@ -38,5 +38,12 @@ public class Campo {
         } else {
             return false;
         }
+
+        void alternarMarcacao() {
+            if (!aberto) {
+                marcado = !marcado;
+            }
+        }
+
     }
 }
