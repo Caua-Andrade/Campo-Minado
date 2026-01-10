@@ -68,4 +68,11 @@ public class CampoTeste {
         campo.alternarMarcacao();
         assertTrue(campo.isMarcado());
     }
+
+    @Test
+    void testeAlternarMacacaoDuasChamadas() {
+        campo.alternarMarcacao();
+        campo.alternarMarcacao();
+        assertFalse(campo.isMarcado());
+    }
 }
