@@ -57,4 +57,8 @@ public class CampoTeste {
         // Já que o resultado é falso, importo o assertFalse
         assertFalse(resultado);
     }
+
+    void testeAlternarMacacao() {
+        assertFalse();
+    }
 }
