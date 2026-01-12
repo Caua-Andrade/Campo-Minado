@@ -73,6 +73,10 @@ public class Campo {
         return vizinhos.stream().noneMatch(v -> v.minado);
     }
 
+    void minar() {
+        minado = true;
+    }
+
     public boolean isMarcado() {
         return marcado;
     }
