@@ -76,5 +76,10 @@ public class CampoTeste {
         assertFalse(campo.isMarcado());
         //Teste para mudar a marcacao
     }
+
+    @Test
+    void testeAbrirNaoMinadoNaoMarcado() {
+        assertTrue(campo.abrir());
+    }
 }
 
