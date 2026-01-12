@@ -1,5 +1,6 @@
 package br.com.cod3r.cm.modelo;
 
+import br.com.cod3r.cm.excecao.ExplosaoException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -88,10 +89,21 @@ public class CampoTeste {
         assertFalse(campo.abrir());
     }
 
+    @Test
     void testeAbrirMinadoMarcado() {
         campo.alternarMarcacao();
         campo.minar();
         assertFalse(campo.abrir());
+    }
+
+    @Test
+    void testeAbrirMinadoNaoMarcado() {
+        campo.minar();
+
+        assertThrows(ExplosaoException.class, () -> {
+           campo.abrir();
+        });
+
     }
 }
 
