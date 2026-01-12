@@ -74,5 +74,7 @@ public class CampoTeste {
         campo.alternarMarcacao();
         campo.alternarMarcacao();
         assertFalse(campo.isMarcado());
+        //Teste para mudar a marcacao
     }
 }
+
