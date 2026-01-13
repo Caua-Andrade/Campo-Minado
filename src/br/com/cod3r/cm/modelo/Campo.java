@@ -68,6 +68,7 @@ public class Campo {
         } else {
             return false;
         }
+
     }
 
     boolean vizinhancaSegura() {
@@ -115,6 +116,7 @@ public class Campo {
     }
 
     public String toString() {
+
         if (marcado) {
             return "x";
         } else if (aberto && minado) {
@@ -127,5 +129,6 @@ public class Campo {
         } else {
             return "?";
         }
+
     }
 }
