@@ -106,4 +106,25 @@ public class Campo {
     long minasNaVizinhanca() {
         return vizinhos.stream().filter(v -> v.minado).count();
     }
+
+    void reiniciar() {
+        aberto = false;
+        minado = false;
+        marcado = false;
+    }
+
+    public String toString() {
+        if (marcado) {
+            return "x";
+        } else if (aberto && minado) {
+            return "*";
+        } else if (aberto && minasNaVizinhanca() > 0) {
+            // Mostra a quantidade de minas na vizinhança
+            return Long.toString(minasNaVizinhanca());
+        } else if (aberto) {
+            return " ";
+        } else {
+            return "?";
+        }
+    }
 }
