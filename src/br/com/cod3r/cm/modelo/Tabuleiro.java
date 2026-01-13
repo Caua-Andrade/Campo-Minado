@@ -15,5 +15,21 @@ public class Tabuleiro {
         this.linhas = linhas;
         this.colunas = colunas;
         this.minas = minas;
+
+        gerarCampos();
+        associarOsVizinhos();
+        sortearAsMinas();
+    }
+
+    private void gerarCampos() {
+
+    }
+
+    private void associarOsVizinhos() {
+
+    }
+
+    private void sortearAsMinas() {
+
     }
 }
