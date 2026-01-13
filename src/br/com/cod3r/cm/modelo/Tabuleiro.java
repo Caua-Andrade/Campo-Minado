@@ -17,16 +17,25 @@ public class Tabuleiro {
         this.minas = minas;
 
         gerarCampos();
-        associarOsVizinhos();
+        associarVizinhos();
         sortearAsMinas();
     }
 
     private void gerarCampos() {
-
+        for (int linha = 0; linha < linhas; linha++) {
+            for (int coluna = 0; coluna < colunas; coluna++) {
+                campos.add(new Campo(linha, coluna));
+            }
+        }
     }
 
-    private void associarOsVizinhos() {
-
+    private void associarVizinhos() {
+        for (Campo c1: campos) {
+            for (Campo c2: campos) {
+                // Define quem pode ser ou não vizinho, isso de acordo com a distância
+                c1.adicionarVizinho(c2);
+            }
+        }
     }
 
     private void sortearAsMinas() {
