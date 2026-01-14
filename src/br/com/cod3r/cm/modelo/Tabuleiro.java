@@ -39,6 +39,9 @@ public class Tabuleiro {
     }
 
     private void sortearAsMinas() {
+        int minasArmadas = 0;
+
+        // O do-while a seguir vai ser usado para rodar até ter a quantidade de minas desejadas
 
     }
 }
