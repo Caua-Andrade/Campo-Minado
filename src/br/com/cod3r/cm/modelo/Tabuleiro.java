@@ -2,6 +2,7 @@ package br.com.cod3r.cm.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Tabuleiro {
 
@@ -39,9 +40,14 @@ public class Tabuleiro {
     }
 
     private void sortearAsMinas() {
-        int minasArmadas = 0;
+        long minasArmadas = 0;
+        Predicate<Campo> minado = c -> c.isMinado();
 
         // O do-while a seguir vai ser usado para rodar até ter a quantidade de minas desejadas
-
+        do {
+            minasArmadas = campos.stream().filter(minado).count();
+            int aleatorio = (int) (Math.random() * campos.size());
+            campos.get(aleatorio).minar();
+        } while (minasArmadas < minas);
     }
 }
