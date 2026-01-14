@@ -59,4 +59,8 @@ public class Tabuleiro {
         campos.stream().forEach(c -> c.reiniciar());
         sortearAsMinas();
     }
+
+    public String toString() {
+        return "";
+    }
 }
