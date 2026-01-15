@@ -1,5 +1,6 @@
 package br.com.cod3r.cm.visao;
 
+import br.com.cod3r.cm.excecao.ExplosaoException;
 import br.com.cod3r.cm.excecao.SairException;
 import br.com.cod3r.cm.modelo.Tabuleiro;
 
@@ -22,6 +23,8 @@ public class TabuleiroConsole {
 
             while (continuar) {
 
+                clicloDoJogo();
+
                 System.out.println("Outra partida? (S/n) ");
                 String resposta = entrada.nextLine();
 
@@ -37,5 +40,31 @@ public class TabuleiroConsole {
         } finally {
             entrada.close();
         }
+    }
+
+    private void clicloDoJogo() {
+        try {
+
+            while (!tabuleiro.objetivoAlcancado()) {
+                System.out.println(tabuleiro);
+
+                String digitado = capturarValorDigitado("Digite (x, y): ");
+            }
+
+            System.out.println("Você ganhou!!!");
+        } catch (ExplosaoException e) {
+            System.out.println("Você perdeu :(");
+        }
+    }
+
+    private String capturarValorDigitado(String texto) {
+        System.out.print(texto);
+        String digitado = entrada.nextLine();
+
+        if ("sair".equalsIgnoreCase(digitado)) {
+            throw new SairException();
+        }
+
+        return digitado;
     }
 }
