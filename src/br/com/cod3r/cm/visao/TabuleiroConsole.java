@@ -4,6 +4,8 @@ import br.com.cod3r.cm.excecao.ExplosaoException;
 import br.com.cod3r.cm.excecao.SairException;
 import br.com.cod3r.cm.modelo.Tabuleiro;
 
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class TabuleiroConsole {
@@ -49,6 +51,9 @@ public class TabuleiroConsole {
                 System.out.println(tabuleiro);
 
                 String digitado = capturarValorDigitado("Digite (x, y): ");
+
+                Iterator<Integer> xy = Arrays.stream(digitado.split(","))
+                        .map(e -> Integer.parseInt(e)).iterator();
             }
 
             System.out.println("Você ganhou!!!");
