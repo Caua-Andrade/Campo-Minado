@@ -66,9 +66,9 @@ public class Tabuleiro {
 
         // O do-while a seguir vai ser usado para rodar até ter a quantidade de minas desejadas
         do {
-            minasArmadas = campos.stream().filter(minado).count();
             int aleatorio = (int) (Math.random() * campos.size());
             campos.get(aleatorio).minar();
+            minasArmadas = campos.stream().filter(minado).count();
         } while (minasArmadas < minas);
     }
 
