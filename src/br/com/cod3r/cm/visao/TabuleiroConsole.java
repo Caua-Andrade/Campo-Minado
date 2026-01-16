@@ -50,7 +50,7 @@ public class TabuleiroConsole {
             while (!tabuleiro.objetivoAlcancado()) {
                 System.out.println(tabuleiro);
 
-                String digitado = capturarValorDigitado("Digite (x, y): ");
+                String digitado = capturarValorDigitado("Digite (y, x): ");
 
                 Iterator<Integer> xy = Arrays.stream(digitado.split(","))
                         .map(e -> Integer.parseInt(e.trim())).iterator();
