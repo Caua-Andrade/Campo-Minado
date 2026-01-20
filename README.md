@@ -26,17 +26,16 @@ br.com.cod3r.cm
 ├── Aplicacao.java
 │
 ├── excecao
-│ ├── ExplosaoException.java
-│ └── SairException.java
+│   ├── ExplosaoException.java
+│   └── SairException.java
 │
 ├── modelo
-│ ├── Campo.java
-│ ├── Tabuleiro.java
-│ └── CampoTeste.java
+│   ├── Campo.java
+│   ├── Tabuleiro.java
+│   └── CampoTeste.java
 │
 └── visao
-└── TabuleiroConsole.java
-
+    └── TabuleiroConsole.java
 ---
 
 ## 🧠 Conceitos Utilizados
