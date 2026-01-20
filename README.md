@@ -2,8 +2,6 @@
 
 Projeto de **Campo Minado** desenvolvido em **Java**, executado no **terminal**, com foco em **boas práticas de Programação Orientada a Objetos**, uso de **exceções**, **streams**, **testes unitários com JUnit 5** e separação clara de responsabilidades.
 
-> Projeto ideal para quem está aprendendo Java e quer ver conceitos aplicados em algo prático.
-
 ---
 
 ## 📌 Funcionalidades
