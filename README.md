@@ -20,22 +20,20 @@ Projeto de **Campo Minado** desenvolvido em **Java**, executado no **terminal**,
 
 ---
 
-## 🧱 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-br.com.cod3r.cm
-├── Aplicacao.java
-│
-├── excecao
-│   ├── ExplosaoException.java
-│   └── SairException.java
-│
-├── modelo
-│   ├── Campo.java
-│   ├── Tabuleiro.java
-│   └── CampoTeste.java
-│
-└── visao
-    └── TabuleiroConsole.java
+- **br.com.cod3r.cm**
+  - `Aplicacao.java`
+  - **excecao**
+    - `ExplosaoException.java`
+    - `SairException.java`
+  - **modelo**
+    - `Campo.java`
+    - `Tabuleiro.java`
+    - `CampoTeste.java`
+  - **visao**
+    - `TabuleiroConsole.java`
+
 ---
 
 ## 🧠 Conceitos Utilizados
