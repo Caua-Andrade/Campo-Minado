@@ -173,7 +173,7 @@ Este projeto é excelente para praticar:
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autor: Cauã
 
 Projeto desenvolvido com foco em **aprendizado e prática de Java**, aplicando conceitos fundamentais de programação orientada a objetos.
 
